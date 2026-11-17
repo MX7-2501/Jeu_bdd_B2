@@ -1,8 +1,3 @@
-from pymongo import MongoClient
-
-client = MongoClient("mongodb://localhost:27017")
-db = client["jeu_video"]
-
 #lancer la partie, cree equipe, boucle vague, score
 #fonction lancer_partie()
     #pseudo = demander un pseudo non vide
@@ -20,9 +15,16 @@ db = client["jeu_video"]
     #retourner equipe
 
 #cree les vagues 
+#fonction vague_de_combat(equipe, monstre)
+#   pour chaque heros vivant tant que le monstre est vivant
+#       afficher "heros inflige degats" (heros.attaquer(monstre))
+#   vivants = heros encore en vie 
+#   cible = un vivant au hasard
+#   afficher "monstre inflige degats" (monstre.attaquer(cible))
+
 #fonction boucle_vagues 
     #score commence a zero
-    #systeme boucle
+    #commencement boucle
         #creer combat de monstre aleatoire
         #afficher la vague avec score +1 nouveau monstre listmongodb apparait
         #si combattre_vague en equipe ne peux plus combattre
@@ -30,25 +32,3 @@ db = client["jeu_video"]
         #si combattre_vague en equipe peut combattre
     #retourner score
 
-
-
-#.... Affichage titre
-def afficher_titre():
-    print("=" * 20)
-    print("      JEU VIDEO")
-    print("=" * 20)
-
-#afficher option/afficher les choix
-def affichage_options(options):
-    for i, option in enumerate(options, 1):
-        print("f{i}. {option}")
-
-afficher_titre()
-affichage_options(["Créer une equipe", "voir les personnages", "Quitter"])
-#acquerir des choix valide
-#choix du joueur
-#afficher personnages 
-#afficher statistiques
-#creation d'equipe
-    #pour les numeros faire des choix avec les options existante
-        #ecrire les options 
