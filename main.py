@@ -18,3 +18,5 @@
 #   si le choix est inferieur au minimun ou superieur au maximum
 #       retourner False
 #   retourner True
+
+#

@@ -32,3 +32,7 @@
         #si combattre_vague en equipe peut combattre
     #retourner score
 
+#fonction sauvegarder_top(base)
+#   recuperer les 3 meilleures scores (tri décroissant, limite 3)
+#   si aucun afficher "aucun score"
+#   sinon afficher "rang. pseudo X vague"
