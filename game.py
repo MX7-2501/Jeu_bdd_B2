@@ -12,7 +12,13 @@
         #afficher les personnages disponible avec les stats
         #choix du joueur peut être 1 ou un 
         #si perso choisi est le meme retirer
-    #retourner equipe
+#    retourner equipe
+
+#fonction choisir_equipe
+#   cree un emplacement vide
+#       recuperer l'equipe
+#       mettre equipe dans emplacement libre 
+#   retourner 
 
 #cree les vagues 
 #fonction vague_de_combat(equipe, monstre)

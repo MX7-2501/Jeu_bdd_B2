@@ -9,7 +9,7 @@
 #       demander un choix a l'utilisateur
 #       si le choix est valide
 #           retourner le choix valide
-#       afficher un messaage d'erreur
+#       afficher un messaage d'erreur 
 
 #choix est valide
 #    si le choix n'est pas isdigit()
@@ -18,5 +18,3 @@
 #   si le choix est inferieur au minimun ou superieur au maximum
 #       retourner False
 #   retourner True
-
-#

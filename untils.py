@@ -6,3 +6,8 @@
 
 #fonction sauvegardé_score avec base pseudo score
     #retourne meilleure score 
+
+#fonction monstre aleatoire
+#   tirer 1 monstre au hasard
+
+#fonction effacer terminal
