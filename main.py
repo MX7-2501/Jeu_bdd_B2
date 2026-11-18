@@ -1,5 +1,10 @@
 #Afficher menu
-#effacer l'ecran
+#fonction menu
+#   utilisation base de donnees
+#   effacer l'ecran
+#   afficher le titre "COMBAT GAME"
+#   demander le choix du joueur parmis les 3 options (jouer, top 3, quitter)
+
 #afficher le titre "COMBAT GAME"
 #Recuperer un choix valide parmi les options
 #   tant que infini
