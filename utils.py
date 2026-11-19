@@ -1,3 +1,8 @@
+#base mongodb
+#characters : name, atk, defense, hp
+#monsters : name, atk, defense, hp
+#scores : pseudo, equipe, vague
+
 #fonction get_base()
 # se connecter a mongodb localhost
 # retourner la base "jeu_video" 
@@ -11,9 +16,8 @@
 #   inserer dictionnaire dans la liste scores
 
 #fonction monstre aleatoire
-#   recuperer tous les monstres de la collection monstres
-#   choisir un monstre au hasard
-#   retourner le monstre
+#   recuperer la liste des monstres de la collection "monsters"
+#   retourner un monstre au hasard
 
 #fonction afficher_top3
 #   chercher les scores tries du plus grand au plus petit
