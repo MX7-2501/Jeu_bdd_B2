@@ -8,33 +8,37 @@
 # retourner la base "jeu_video" 
 
 #fonction recuperer les perso dans le dictionnaire mongodb
-#   retourner combattants avec attaques defense pv depuis le dictionnaires
-#   retourner la liste
+#   retourner la liste des perso de la listedb characters
 
 #fonction sauvegardé_score avec base pseudo score
-#   creer un dictionaire avec le pseudo lequipe et score
 #   inserer dictionnaire dans la liste scores
 
 #fonction monstre aleatoire
-#   recuperer la liste des monstres de la collection "monsters"
+#   recuperer la liste des monstres de la listeddb "monsters"
 #   retourner un monstre au hasard
-
-#fonction afficher_top3
-#   chercher les scores tries du plus grand au plus petit
-#   garder seulement 3 scores
-#   si aucun score alors
-#       afficher "aucun score"
-#   sinon pour chaque score avec son rang
-#       afficher "rang. pseudo - le nombre de vagues"
 
 #fonction recuperer le top 3 score
 #   triee les scores du plus grand au plus petit
 #   garder les 3 meilleures scores les plus grand 
 #   retourner la liste
 
-#fonction cree document score
-#   retourner un dico avec pseudo noms equipe et score
+#Recuperer un choix valide parmi les options
+#   tant que infini
+#       afficher les options numerotees
+#           pour chaque option dans enumerate(options, start=1)
+#               afficher {i}, {option}
+#       demander un choix a l'utilisateur
+#       si le choix est valide
+#           retourner le choix valide
+#       afficher un messaage d'erreur  
 
-#fonction afficher options
-#   pour chaque otpion avec son numero
-#       afficher numero.option
+#choix est valide
+#    si le choix n'est pas isdigit()
+#       retourner False
+#   convertir le choix en entier
+#   si le choix est inferieur au minimun ou superieur au maximum
+#       retourner False
+#   retourner True
+
+#fonction attendre entree
+#   demander et afficher "appuie sur entree pour continuer"
