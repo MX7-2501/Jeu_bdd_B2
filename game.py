@@ -32,31 +32,33 @@
 #verifier si l'equipe est pleine
     #retourner vrai si le nombre de perso dans l'equipe >= a taille max
 
+#Cree les vagues 
 #fonction combattre vague
-#   tant que monstre vivant et au moins un heros vivant
-#       pour chaque heros dans equipe
-#           si heros vivant et monstre vivant
-#               heros attaque monstre
-#               afficher "heros inflige des degats"
-#       si le monstre est mort 
-#               afficher "monstre vaincu"
+#   tant que vrai
+#       heros attaque
+#       si monstre mort 
+#           affcher "monstre  vaincu"
 #           retourner vrai
-#       les heros encore en vie est egal a vivant
-#           les vivants cibler au hasard est egal a cible
-#           un monstre attaque cible
-#           afficher "monstre inflige des degats a la cible"
-#        si la cible est morte 
-#               afficher "le hero est KO"
-#       si toute l'equipe est morte
-#    retourner faux   
+#       monstre attaque
+#       si heros vivant est vide
+#           afficher "toute l'equipe KO"
+#           retourner faux
 
-#cree les vagues 
-#fonction vague_de_combat(equipe, monstre)
-#   pour chaque heros vivant tant que le monstre est vivant
-#       afficher "heros inflige degats" heros attaquer monstre
-#   vivants est un heros encore en vie 
-#   cible est un vivant au hasard
-#   afficher "monstre inflige degats" monstre attaquer cible
+#fonction heros vivant(equipe)
+#   retourner la liste des heros est_vivant est vrai
+
+#fonction heros attaque
+#   pour chaque heros dans heros vivant
+#       si monstre vivant
+#           heros attaque monstre
+#           afficher "heros inflige des dégats"
+
+#fonction monstres attaque
+#   cible est un heros au hasard dans heros vivant
+#   le monstre attaque cible
+#   afficher "monstre inflige des degats a la cible"
+#   si la cible est morte 
+#       afficher "le heros est KO"
 
 #fonction boucle_vagues 
     #score commence a zero
