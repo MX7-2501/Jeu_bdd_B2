@@ -1,11 +1,11 @@
 #fonction lancer_partie()
     #pseudo = demander un pseudo non vide
     #equipe = construire equipe
-    #score = boucle des vagues
+    #vague = boucle des vagues
     #sauvegarder le score avec l'equipe, le pseudo et le score
-    #afficher top 3 scores dans le menu
+    #afficher "defaite a la vague"
+    #attendre entree par le joueur
 
-#pseudo valide
 #fonction demander_pseudo
 # tant que infini
 #     demander le pseudo
@@ -13,24 +13,16 @@
 #       retourner le pseudo
 #     afficher "pseudo vide"
 
-#besoin de la liste des personnages de la DB et de l'equipe actuelle
-#creer variable/un espace disponible vide 
-#pour chaque personnage de la DB
-#   si perso n'est pas dans l'equipe
-#       ajouter le personnage a la liste disponibles
-#retourner la liste disponibles
+#fonction creer une equipe
+#equipe list vide 
+#   tant que l'equipe a moins de 3 personnages
+#       pour chaque personnage options = texte_personnage
+#       recuperer le choix du joueur 
+#       retirer le personnage choisi de personnage et l'ajouter a l'equipe
+#retourner l'equipe
 
-#Besoin de la liste des personnages de la base DB
-#fonction creer une equipe 
-#   tant que l'equipe n'est pas complete 
-#       determiner la liste des personnages disponibles
-#       construire la liste des options a afficher disponibles
-#       recuperer le choix de l'utilisateur
-#       ajouter le personnage choisi a l'equipe 
-#   retourner l'equipe complete
-
-#verifier si l'equipe est pleine
-    #retourner vrai si le nombre de perso dans l'equipe >= a taille max
+#fonction texte_personnage
+#   retourner le nom, l'attaque, l'hp, la defense 
 
 #Cree les vagues 
 #fonction combattre vague
