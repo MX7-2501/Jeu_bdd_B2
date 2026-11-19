@@ -3,7 +3,7 @@
 # retourner la base "jeu_video" 
 
 #fonction recuperer les perso dans le dictionnaire mongodb
-#   retourner combattants avec attaques defense rapidité pv depuis le dictionnaires
+#   retourner combattants avec attaques defense pv depuis le dictionnaires
 #   retourner la liste
 
 #fonction sauvegardé_score avec base pseudo score

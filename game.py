@@ -1,4 +1,3 @@
-#lancer la partie, cree equipe, boucle vague, score
 #fonction lancer_partie()
     #pseudo = demander un pseudo non vide
     #equipe = construire equipe
@@ -6,32 +5,16 @@
     #sauvegarder le score avec l'equipe, le pseudo et le score
     #afficher top 3 scores dans le menu
 
-#fonction pseudo est valide
+#pseudo valide
 #fonction demander_pseudo
 # tant que infini
 #     demander le pseudo
-#     si le pseudo n'est pas vide retourner le pseudo 
+#     si le pseudo n'est pas vide
 #       retourner le pseudo
 #     afficher "pseudo vide"
 
-#transformer la liste des dico des perso en liste de texte
-    #creer  une liste vide pour les options
-#pour chaque perso disponible
-#   construire le texte d'affichage
-#retourner la liste options
-
-#verifier si l'equipe est pleine
-    #retourner vrai si le nombre de perso dans l'equipe >= a taille max
-
-#besoin de la liste des personnages disponibles 
-#creer la variable options vide 
-#pour chaque perso avec l'index dans perso dispo
-#   formater texte avec index et le nom du personnage
-#   ajouter ce texte a la liste des options
-#retourner la liste options 
-
 #besoin de la liste des personnages de la DB et de l'equipe actuelle
-#creer la variable disponible vide
+#creer variable/un espace disponible vide 
 #pour chaque personnage de la DB
 #   si perso n'est pas dans l'equipe
 #       ajouter le personnage a la liste disponibles
@@ -46,20 +29,23 @@
 #       ajouter le personnage choisi a l'equipe 
 #   retourner l'equipe complete
 
+#verifier si l'equipe est pleine
+    #retourner vrai si le nombre de perso dans l'equipe >= a taille max
+
 #fonction combattre vague
 #   tant que monstre vivant et au moins un heros vivant
 #       pour chaque heros dans equipe
 #           si heros vivant et monstre vivant
 #               heros attaque monstre
-#               afficher "heros in flige des degats"
-#           si le monstre est mort 
+#               afficher "heros inflige des degats"
+#       si le monstre est mort 
 #               afficher "monstre vaincu"
-#               retourner vrai
-#           les heros encore en vie est egal a vivant
+#           retourner vrai
+#       les heros encore en vie est egal a vivant
 #           les vivants cibler au hasard est egal a cible
 #           un monstre attaque cible
 #           afficher "monstre inflige des degats a la cible"
-#           si la cible est morte 
+#        si la cible est morte 
 #               afficher "le hero est KO"
 #       si toute l'equipe est morte
 #    retourner faux   
@@ -68,8 +54,8 @@
 #fonction vague_de_combat(equipe, monstre)
 #   pour chaque heros vivant tant que le monstre est vivant
 #       afficher "heros inflige degats" heros attaquer monstre
-#   vivants = heros encore en vie 
-#   cible = un vivant au hasard
+#   vivants est un heros encore en vie 
+#   cible est un vivant au hasard
 #   afficher "monstre inflige degats" monstre attaquer cible
 
 #fonction boucle_vagues 
@@ -82,14 +68,14 @@
         #si combattre_vague en equipe peut combattre
     #retourner score
 
-#fonction est_viant 
+#fonction est vivant 
 #   retourner vrai si pv > 0
 
 #fonction attaquer
 #   degats egale attaquant moins defense de la cible
-#   si degats inferieur a  1 mettre degat a 1
+#   si les degats inferieur a  1 mettre degat a 1
 #   enlever degats aux pv de la cible
-#   si pv inferieur a 0 mettre pv a 0
+#   si les pv inferieur a 0 mettre pv a 0
 #retourner degats
 
 #fonction sauvegarder_top(base)
