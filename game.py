@@ -6,6 +6,7 @@
     #sauvegarder le score avec l'equipe, le pseudo et le score
     #afficher top 3 scores dans le menu
 
+#fonction pseudo est valide
 #fonction demander_pseudo
 # tant que infini
 #     demander le pseudo
@@ -13,12 +14,37 @@
 #       retourner le pseudo
 #     afficher "pseudo vide"
 
+#transformer la liste des dico des perso en liste de texte
+    #creer  une liste vide pour les options
+#pour chaque perso disponible
+#   construire le texte d'affichage
+#retourner la liste options
+
+#verifier si l'equipe est pleine
+    #retourner vrai si le nombre de perso dans l'equipe >= a taille max
+
+#besoin de la liste des personnages disponibles 
+#creer la variable options vide 
+#pour chaque perso avec l'index dans perso dispo
+#   formater texte avec index et le nom du personnage
+#   ajouter ce texte a la liste des options
+#retourner la liste options 
+
+#besoin de la liste des personnages de la DB et de l'equipe actuelle
+#creer la variable disponible vide
+#pour chaque personnage de la DB
+#   si perso n'est pas dans l'equipe
+#       ajouter le personnage a la liste disponibles
+#retourner la liste disponibles
+
 #Besoin de la liste des personnages de la base DB
-#fonction creer une equipe
+#fonction creer une equipe 
 #   tant que l'equipe n'est pas complete 
 #       determiner la liste des personnages disponibles
 #       construire la liste des options a afficher disponibles
-#       ajouter le personnage a l'equipe index 
+#       recuperer le choix de l'utilisateur
+#       ajouter le personnage choisi a l'equipe 
+#   retourner l'equipe complete
 
 #fonction combattre vague
 #   tant que monstre vivant et au moins un heros vivant

@@ -2,7 +2,7 @@
 # se connecter a mongodb localhost
 # retourner la base "jeu_video" 
 
-#fonction recuperer les combattants dans le dictionnaire mongodb
+#fonction recuperer les perso dans le dictionnaire mongodb
 #   retourner combattants avec attaques defense rapidité pv depuis le dictionnaires
 #   retourner la liste
 
@@ -27,3 +27,10 @@
 #   triee les scores du plus grand au plus petit
 #   garder les 3 meilleures scores les plus grand 
 #   retourner la liste
+
+#fonction cree document score
+#   retourner un dico avec pseudo noms equipe et score
+
+#fonction afficher options
+#   pour chaque otpion avec son numero
+#       afficher numero.option

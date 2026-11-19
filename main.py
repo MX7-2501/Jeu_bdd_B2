@@ -1,12 +1,14 @@
-#Afficher menu
 #fonction menu
 #   utilisation base de donnees
 #   tant que infini
 #   effacer l'ecran
+
 #   afficher le titre "COMBAT GAME"
 #   demander le choix du joueur parmis les 3 options (jouer, top 3, quitter)
 
-#afficher le titre "COMBAT GAME"
+#fonction attendre entree
+#   demander et afficher "appuie sur entree pour continuer"
+
 #Recuperer un choix valide parmi les options
 #   tant que infini
 #       afficher les options numerotees
