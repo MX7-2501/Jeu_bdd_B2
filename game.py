@@ -6,19 +6,19 @@
     #sauvegarder le score avec l'equipe, le pseudo et le score
     #afficher top 3 scores dans le menu
 
-#Fonction construire equipe
-    #perso disponible = tous les personnages du camps
-    #tant que equipe < 3 héros
-        #afficher les personnages disponible avec les stats
-        #choix du joueur peut être 1 ou un 
-        #si perso choisi est le meme retirer
-#    retourner equipe
+#fonction demander_pseudo
+# tant que infini
+#     demander le pseudo
+#     si le pseudo n'est pas vide retourner le pseudo 
+#       retourner le pseudo
+#     afficher "pseudo vide"
 
-#fonction choisir_equipe
-#   cree un emplacement vide
-#       recuperer l'equipe
-#       mettre equipe dans emplacement libre 
-#   retourner 
+#Besoin de la liste des personnages de la base DB
+#fonction creer une equipe
+#   tant que l'equipe n'est pas complete 
+#       determiner la liste des personnages disponibles
+#       construire la liste des options a afficher disponibles
+#       ajouter le personnage a l'equipe index 
 
 #fonction combattre vague
 #   tant que monstre vivant et au moins un heros vivant

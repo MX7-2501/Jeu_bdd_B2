@@ -1,6 +1,7 @@
 #Afficher menu
 #fonction menu
 #   utilisation base de donnees
+#   tant que infini
 #   effacer l'ecran
 #   afficher le titre "COMBAT GAME"
 #   demander le choix du joueur parmis les 3 options (jouer, top 3, quitter)
@@ -14,7 +15,7 @@
 #       demander un choix a l'utilisateur
 #       si le choix est valide
 #           retourner le choix valide
-#       afficher un messaage d'erreur 
+#       afficher un messaage d'erreur  
 
 #choix est valide
 #    si le choix n'est pas isdigit()
