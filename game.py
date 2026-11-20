@@ -24,9 +24,16 @@
 #fonction texte_personnage
 #   retourner le nom, l'attaque, l'hp, la defense 
 
-#Cree les vagues 
+#fonction boucle_vagues 
+    #vague commence a 1
+    #tant que infini
+        #creer combat de monstre aleatoire
+        #afficher la vague avec nouveau monstre listmongodb apparait
+        #si combattre_vague est faux retourner vague
+        #vague = vague + 1
+ 
 #fonction combattre vague
-#   tant que vrai
+#   tant que infini
 #       heros attaque
 #       si monstre mort 
 #           affcher "monstre  vaincu"
@@ -35,9 +42,6 @@
 #       si heros vivant est vide
 #           afficher "toute l'equipe KO"
 #           retourner faux
-
-#fonction heros vivant(equipe)
-#   retourner la liste des heros est_vivant est vrai
 
 #fonction heros attaque
 #   pour chaque heros dans heros vivant
@@ -48,31 +52,17 @@
 #fonction monstres attaque
 #   cible est un heros au hasard dans heros vivant
 #   le monstre attaque cible
-#   afficher "monstre inflige des degats a la cible"
-#   si la cible est morte 
-#       afficher "le heros est KO"
 
-#fonction boucle_vagues 
-    #score commence a zero
-    #commencement boucle
-        #creer combat de monstre aleatoire
-        #afficher la vague avec score +1 nouveau monstre listmongodb apparait
-        #si combattre_vague en equipe ne peux plus combattre
-            #afficher "defaite" et sortir
-        #si combattre_vague en equipe peut combattre
-    #retourner score
+#fonction attaquer
+#   degats = attaque - defense de la cible
+#   si les degats inferieur a  1 mettre degat a 1
+#   enlever degats aux hp de la cible
+#   si les hp inferieur a 0 mettre hp a 0
+#   afficher "attaquant inflige degats a la cible il reste x hp"
+#   si la cible n'est pas vivante afficher "cible est KO"
 
 #fonction est vivant 
 #   retourner vrai si pv > 0
 
-#fonction attaquer
-#   degats egale attaquant moins defense de la cible
-#   si les degats inferieur a  1 mettre degat a 1
-#   enlever degats aux pv de la cible
-#   si les pv inferieur a 0 mettre pv a 0
-#retourner degats
-
-#fonction sauvegarder_top(base)
-#   recuperer les 3 meilleures scores (tri décroissant, limite 3)
-#   si aucun afficher "aucun score"
-#   sinon afficher "rang. pseudo X vague"
+#fonction heros vivant(equipe)
+#   retourner la liste des heros est_vivant est vrai

@@ -3,10 +3,17 @@ from pymongo import MongoClient
 client = MongoClient("mongodb://localhost:27017")
 db = client["jeu_video"]
 
-#fonction base_donnees
-#   recuperer choix du joueur pour equipe 
-#       recuperer l'equipe dans dico mongodb
-#   si la vague commence
-#       recuperer monstre dans dico mongodb
-#retourner
+#liste des personnagesdb
+
+#liste des monstresdb
+
+#fonction remplir la liste vide mongodb
+#   vider la list
+#   inserer tous les elements de la liste 
+
+#fonction remplir_base
+# ouvrir la base
+#remplir la liste des personnages
+#remplir la liste des monstres
+# afficher "OK !" 
 
