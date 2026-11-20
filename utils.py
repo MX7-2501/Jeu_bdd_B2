@@ -52,7 +52,7 @@ def recuperer_choix_utilisateur(options):
 
 #fonction afficher options umerotees
 def afficher_options_numerotees(options):
-#   pourchaque option dans enumerate
+#   pour chaque option dans enumerate
     for i, option in enumerate(options, start=1):
         print(f"{i}. {option}")
 

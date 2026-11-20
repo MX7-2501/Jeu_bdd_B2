@@ -1,9 +1,12 @@
+import random
+from utils import lire_personnage, monstre_aleatoire, sauvegarder_score, recuperer_choix_utilisateur, attendre_entree
+
 #fonction lancer_partie()
 def lancer_partie(base):
     #pseudo = demander un pseudo non vide
     pseudo = demander_pseudo()
     #equipe = construire equipe
-    equipe = creer_equipe(lire_personnages(base))
+    equipe = creer_equipe(lire_personnage(base))
     #vague = boucle des vagues
     vague = boucle_vagues(base, equipe)
     #sauvegarder le score avec l'equipe, le pseudo et le score
@@ -20,7 +23,7 @@ def demander_pseudo():
 #     demander le pseudo
         pseudo = input("Ton pseudo : ").strip()
 #     si le pseudo n'est pas vide
-        if pseudo != ""
+        if pseudo != "":
 #       retourner le pseudo
             return pseudo
 #     afficher "pseudo vide"
@@ -31,7 +34,7 @@ def creer_equipe(personnage):
 #equipe list vide 
     equipe = []
 #   tant que l'equipe a moins de 3 personnages
-    while len(equipe)
+    while len(equipe):
 #       pour chaque personnage options = texte_personnage
         options = [texte_personnage(perso) for perso in personnages]
 #       recuperer le choix du joueur 
@@ -39,7 +42,7 @@ def creer_equipe(personnage):
 #       retirer le personnage choisi de personnage et l'ajouter a l'equipe
         equipe.append(personnages.pop(choix-1))
 #retourner l'equipe
-return equipe
+    return equipe
 
 #fonction texte_personnage
 def texte_personnage(perso):
@@ -59,7 +62,7 @@ def boucle_vagues(base, equipe):
         #si combattre_vague est faux retourner vague
         if not combattre_vague(equipe, monstre):
         #vague = vague + 1
-        vague = vague + 1
+            vague = vague + 1
  
 #fonction combattre vague
 def combattre_vague(equipe, monstre):
